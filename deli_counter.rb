@@ -36,6 +36,6 @@ def now_serving(arr)
   else
     serving = arr[0]
     arr.shift
-    puts "Currently serving #{serving}"
+    puts "Currently serving #{serving}."
   end
 end
