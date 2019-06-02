@@ -29,9 +29,13 @@ def take_a_number(arr, name)
 end
 
 def now_serving(arr)
-  arr.shift
-  
-  
-  
-  puts "#{arr}"
+  size = arr.size
+
+  if size < 1
+    puts "The line is currently empty."
+  else
+    serving = arr[0]
+    arr.shift
+    puts "Currently serving #{serving}"
+  end
 end
