@@ -6,7 +6,7 @@ def line(arr)
   if size < 1
     puts "The line is currently empty."
   else
-    puts "The line is currently: #{arr}"
+    puts "The line is currently: #{arr.join(' ')}"
   end
 end
 
