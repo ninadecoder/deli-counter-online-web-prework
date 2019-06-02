@@ -7,6 +7,7 @@ def line(arr)
     puts "The line is currently empty."
   else
     puts "The line is currently: #{arr.join(' ')}"
+    return arr
   end
 end
 
@@ -20,6 +21,7 @@ def take_a_number(arr, name)
     arr.push "#{newPos}. #{name}"
   end
   puts "Welcome, #{name}. You are number #{newPos} in line."
+  return arr
 
 end
 
