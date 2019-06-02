@@ -32,7 +32,7 @@ def now_serving(arr)
   size = arr.size
 
   if size < 1
-    puts "The line is currently empty."
+    puts "The line is empty."
   else
     serving = arr[0]
     arr.shift
