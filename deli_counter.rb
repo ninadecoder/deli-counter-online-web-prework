@@ -2,26 +2,29 @@
 
 def line(arr)
   size = arr.size
+  count = 0
+  arrNew = []
 
   if size < 1
     puts "The line is currently empty."
   else
-    puts "The line is currently: #{arr.join(' ')}"
-    return arr
+    while count < size
+      newPos = count + 1
+      arrNew.push "#{newPos}. #{arr[count]}"
+      count += 1
+    end
+
+    puts "The line is currently: #{arrNew.join(' ')}"
+
   end
 end
 
 def take_a_number(arr, name)
-  size = arr.size
-  newPos = size + 1
-  
-  if size < 1 
-    arr.push "#{newPos}. #{name}"
-  else
-    arr.push "#{newPos}. #{name}"
-  end
+  newPos = arr.size + 1
+
+  arr.push "#{name}"
+
   puts "Welcome, #{name}. You are number #{newPos} in line."
-  return arr
 
 end
 
